@@ -1,0 +1,659 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Your Name!
+ Author URI:   http://example.com
+ Template:     accelerate-theme
+ Version:      2.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+/* Navigation */
+.toggle-nav {
+    display: none !important;
+}  
+
+/* Home page */
+
+.home-page {
+    background: url("img/hero-image.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 80px;
+    padding: 130px 0;
+    text-align: center;
+}
+
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+.page-header .top-logo {
+    padding: 10px 0;
+}
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+.blog-post {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+
+.blog-post h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 30px 0 8px;
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    margin: 35px 0 10px;
+}
+
+.read-more-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/* Case Study Page */
+
+aside.case-study-sidebar {
+    float: left;
+    width: 300px;
+    height: 450px;
+}
+
+.case-study-images {
+    float: right;
+    width: 600px;
+}
+
+.case-study-images img {
+    padding-bottom: 50px;
+}
+
+/* Featured work */
+.featured-work .site-content {
+    padding-bottom: 80px;
+}
+
+.featured-work h4 {
+    padding-bottom: 20px;
+}
+
+ul.homepage-featured-posts {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    list-style-type: none;   
+    margin: 0;
+}
+
+li.individual-featured-work {
+    padding-right: 20px;
+}
+
+li.individual-featured-work h3 {
+    margin-top: 5px;    
+}
+
+
+/* Case Studies Archive */
+aside.case-study-sidebar {
+    float: left;
+    width: 300px;
+    margin: 0 0 60px;
+}
+
+.case-study-images {
+    float: right;
+    width: 600px;
+}
+
+.case-study-images img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+/* Footer Social Links */
+ul#menu-social-media-nav.social-media-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 30px;
+}
+
+i._mi._before.dashicons {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    line-height: 1.5em;
+}
+
+li.menu-item {
+    padding-right: 5px;
+    padding-top: 15px;
+}
+
+li.menu-item span {
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
+
+/* Contact form */
+
+.contact div.main-content {
+    max-width: 680px;
+    margin: auto;
+}
+
+.contact div.main-content h2 {
+    margin-bottom: 0;
+}
+
+div.nf-form-content {
+    padding-top: 20px;
+}
+
+div#nf-field-5-container.nf-field-container.textbox-container.label-above ,
+div#nf-field-2-container.nf-field-container.email-container.label-above  {
+    width: 320px;
+    display: inline-block;
+}
+
+div#nf-field-5-container.nf-field-container.textbox-container.label-above {
+    margin-right: 20px;
+}
+
+div.nf-field-label label {
+    font-size: 14px;
+}
+
+.nf-form-content div.nf-field input[type="button"] {
+    background-color: #45ac9d;
+    border: 0;
+    color: #f7f7f7;
+    transition: all .5s;
+    float: right;
+}
+
+.nf-form-content div.nf-field-element input.ninja-forms-field {
+    height: 45px;
+}
+
+.field-wrap div.nf-field-element input[type="button"] {
+    width: 160px;
+}
+
+.nf-form-content .nf-field-element textarea,
+.nf-form-content .nf-field-element input.ninja-forms-field { 
+    background-color: #FFFFFF;
+    resize: none;
+}
+
+/* About page */
+
+header.about-page {
+    background: url("img/hero-image.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 30px;
+    padding: 130px 0;
+    text-align: center;
+}
+
+header.about-page p {
+    font-size: 2em;
+    font-weight: 700;
+    width: 40%;
+    color: #f7f7f7;
+}
+
+.about-page .center-text h3,
+.about-page .center-text p {
+    margin: auto;
+    text-align: center;
+    line-height: 2em;
+    width: 70%;
+}
+
+.about-page .center-text h3 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.services {
+    margin: 96px 0;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap row;
+}
+
+.flex-wrapper:nth-child(even) .individual-services {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.services .individual-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-text h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+div.services-padding {
+    margin: 0 40px;
+}
+
+div.service-text {    
+    width: 85%;
+}
+
+div.service-img {
+    width: 30%;
+}
+
+div.work-with-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px 0 10px;
+    border-top: 1px solid #bab8b8;
+}
+div.work-with-us .button {
+    margin: 50px 20px 30px;
+}
+
+/* Single about page */
+
+.about_pages-template-default.single .individual-service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.about_pages-template-default.single .individual-service img {
+    margin-right: 120px;
+}
+
+
+/* 404 page */
+
+.error404 .site-content .main-content {
+    background: url("img/bethany-legg-unsplash.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: 700px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 80px 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.error404 .site-content .main-content h2,
+.error404 .site-content .main-content p {
+    width: 60%;
+    color: #3B3B3B;
+    margin: 0 120px;
+    padding: 0;
+}
+
+.error404 .site-content .main-content p {
+    width: 52%;
+    padding-top: 8px;
+}
+
+.error404 .site-content .main-content h2 {
+    font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 2.7em;
+    color: #45ac9d;
+    padding-bottom: 5px;
+}
+
+.error404 .site-content .main-content span {
+    color: #45ac9d;
+    font-weight: 700;
+}
+
+
+
+/* Twitter feed */
+
+aside#pi_simpletwittertweets-2.widget.PI_SimpleTwitterTweets {
+    width: 35%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 80px;
+}
+
+section.widget.widget_social h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #a6a6a6;
+}
+
+.widget.PI_SimpleTwitterTweets h3.widget-title {
+    padding-bottom: 15px;
+}
+
+.widget.PI_SimpleTwitterTweets ul {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+a.widget.follow_link {
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 700;
+    color: #45ac9d;
+    margin-top: 15px;
+}
+
+span.stt-em a {
+    display: none;
+}
+
+/* Newsletter subscibe bar */
+
+aside.widget.widget_newsletter {
+    border-bottom: 0.5px solid #d3d3d3;
+}
+
+.newsletter-form-container {
+    padding-bottom: 15px;
+}
+
+div.newsletter-text p {
+    font-size: 0.875em;
+    margin-top: 0;   
+}
+
+.newsletter-form-container label input[type="email"] {
+    width: 88%;
+    margin-bottom: 0;
+}
+
+.newsletter-form-container input[type="submit"] {
+    background: #45ac9d;
+    width: 30px;
+    padding: 8px 80px 8px 20px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+/* Media queries */
+
+@media screen and ( max-width: 768px ) {
+    
+    .hero-content h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .hero-content h3 {
+        font-size: 1.4em;
+        padding: 10px 0;
+    }
+
+
+    li.individual-featured-work figure,
+    li.individual-featured-work img,
+    li.individual-featured-work h3 {
+        width: 100%;
+    }
+    
+    li.individual-featured-work {
+        padding-right: 20px;
+        width: 230px;
+    }
+
+    /* Archive page */
+    article.case-study {
+        display: flex;
+
+    }
+
+    .case-study-images {
+        width: 55%;
+        padding: 40px 0 30px;
+    }
+    
+    aside.case-study-sidebar {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .case-study h2 {
+        padding-bottom: 0;
+    }
+
+    /* About page*/
+    header.about-page p {
+        font-size: 1.4em;
+        width: 75%;
+    }
+
+    .center-text p {
+        font-size: 0.9em;
+    }
+
+}
+
+
+
+@media screen and ( max-width: 580px ) {
+
+    /* Navigation */
+    #masthead {
+        padding: 0;
+    }
+
+    .page-header .top-logo {
+        display: inline-block;
+        float: left;
+        padding: 20px 0 0;
+        margin-bottom: 0;
+    }
+
+    .toggle-nav {
+        display: inline-block !important;
+        float: right;
+        margin: 15px 5px 5px;
+        font-size: 1.5em;
+        transition: color linear 0.15s;
+    }
+    
+    a.toggle-nav:link, 
+    a.toggle-nav:visited,
+    a.toggle-nav:hover, 
+    a.toggle-nav:active {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .page-header nav.primary-navigation {
+        display: inline-block;
+        position: relative;
+        background: #fff;
+        text-align: left;
+    }
+    
+    .page-header nav.primary-navigation ul {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        top: -15px;
+        right: -10px;
+        z-index: 990;
+        padding-right: 15px;
+        padding-bottom: 25px;
+        background: #fff;
+    }
+    
+    .page-header nav.primary-navigation ul li {
+        float: none;
+        display: block;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        min-width: 180px;
+        background: #fff;
+        text-align: right;
+    }
+    
+    .page-header nav.primary-navigation li:after {
+        content: none; 
+    }
+    
+    .page-header nav.primary-navigation ul li a {
+        color: #45ac9d;
+        padding-bottom: 0;
+    }
+    
+    /* End Navigation */
+
+
+    /* Front page */
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+    .hero-content h3 {
+        font-size: 1.2em;
+        padding: 0 80px;
+    }
+
+    .blog-post {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-right: 60px;
+    }    
+    .blog-post h3 {
+        font-size: 1.3em;
+        margin: 15px 0 10px;
+    }
+
+
+    aside#pi_simpletwittertweets-2.widget.PI_SimpleTwitterTweets {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    .widget.PI_SimpleTwitterTweets h3.widget-title {
+        margin: 15px 0 10px;
+    }
+
+    /* Case Studies Archive */
+    aside.case-study-sidebar {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    article.case-study {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .case-study-images img {
+        width: 85%;
+    }
+
+    /* About page */
+    
+    header.about-page p {
+        font-size: 1.4em;
+        width: 75%;
+    }
+
+    .services {
+        margin: 76px 0 56px;
+    }
+    
+    .flex-wrapper {
+        justify-content: center;
+    }    
+
+    .services .individual-services {
+        flex-flow: column wrap;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .flex-wrapper:nth-child(even) .individual-services {
+        flex-flow: column wrap;
+    }
+    
+    .service-text h3 {
+        margin: 15px 0 8px;
+        text-align: center;
+    }
+    
+    div.work-with-us {
+        padding: 10px 0 20px;
+        text-align: center;
+    }
+    
+    div.work-with-us .button {
+        margin: 30px 0 0 30px;
+    }
+
+    /* Featured work */
+        
+    ul.homepage-featured-posts {
+        justify-content: flex-start;
+    }
+
+
+    /* Contact form */
+
+    .contact div.main-content {
+        width: 90%;
+    }
+
+    div#nf-field-5-container.nf-field-container.textbox-container.label-above ,
+    div#nf-field-2-container.nf-field-container.email-container.label-above  {
+        width: 100%;
+    }
+
+    .nf-form-content div.nf-field input[type="button"] {
+        float: left;
+    }
+    
+    /* Footer social links */
+    ul#menu-social-media-nav.social-media-menu {
+        justify-content: center;
+    }
+    
+    i._mi._before.dashicons {
+       height: 33px;
+       width: 33px;
+       line-height: 2em;
+    }
+
+}
+
