@@ -461,6 +461,26 @@ div.newsletter-text p {
         font-size: 0.9em;
     }
 
+    /* 404 page */
+
+    .error404 .site-content .main-content {
+        background: url("img/bethany-legg-unsplash.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
+    }    
+
+    .error404 .site-content .main-content h2,
+    .error404 .site-content .main-content p {
+        margin: 0 70px;
+    }
+
+    .error404 .site-content .main-content p {
+        width: 52%;
+        padding-top: 8px;
+    }
+
+    .error404 .site-content .main-content h2 {
+        line-height: 1.2em;
+    }
+
 }
 
 
@@ -653,6 +673,33 @@ div.newsletter-text p {
        height: 33px;
        width: 33px;
        line-height: 2em;
+    }
+
+    /* 404 page */
+
+    .error404 .site-content .main-content {
+        background: url("img/bethany-legg-unsplash.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+        height: 280px;
+        margin-top: 30px;
+        margin-bottom: 200px;
+        padding: 30px 0;
+    }
+
+    .error404 .site-content .main-content h2,
+    .error404 .site-content .main-content p {
+        margin: 0 10px 0 20px;
+    }
+
+    .error404 .site-content .main-content p {
+        font-size: 0.8em;
+        width: 90%;
+        margin: 0 20px 0;
+    }
+
+    .error404 .site-content .main-content h2 {
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-bottom: 170px;
     }
 
 }
