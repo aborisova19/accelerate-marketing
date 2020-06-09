@@ -20,9 +20,7 @@ add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
 // Add burger menu on mobile
 function burger_menu_scripts() {
-     
-    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/scripts/burger-menu-script.js', array( 'jquery' ) );
-  
+    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/scripts/burger-menu-script.js', array( 'jquery' ) );  
 }
 add_action( 'wp_enqueue_scripts', 'burger_menu_scripts' );
 
@@ -79,3 +77,22 @@ function accelerate_theme_child_widget_init() {
 	
 }
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+
+add_action( 'pre_get_posts', function( $query ) {
+
+    // Check that it is the query we want to change: front-end search query
+    if( $query->is_main_query() && ! is_admin() && $query->is_search() ) {
+
+        // Change the query parameters
+        $query->set( 'posts_per_page', 10 );
+
+    }
+
+} );
+
+function wpgood_nav_search( $items, $args ) {
+    $items .= '<li>' . get_search_form( false ) . '</li>';
+    return $items;
+    }
+    add_filter( 'wp_nav_menu_items','wpgood_nav_search', 10, 2 );

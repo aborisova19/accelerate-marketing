@@ -14,6 +14,13 @@
 .toggle-nav {
     display: none !important;
 }  
+.menu-top-nav-container li #searchform {
+    display: none !important;
+}
+.menu-social-media-nav-container li #searchform {
+    display: none !important;
+}
+    
 
 /* Home page */
 
@@ -68,7 +75,7 @@
 aside.case-study-sidebar {
     float: left;
     width: 300px;
-    height: 450px;
+    height: auto;
 }
 
 .case-study-images {
@@ -110,7 +117,8 @@ li.individual-featured-work h3 {
 aside.case-study-sidebar {
     float: left;
     width: 300px;
-    margin: 0 0 60px;
+    height: auto;
+    padding-bottom: 60px;
 }
 
 .case-study-images {
@@ -124,91 +132,94 @@ aside.case-study-sidebar {
     padding-top: 20px;
 }
 
-/* Footer Social Links */
-ul#menu-social-media-nav.social-media-menu {
+/* Twitter feed */
+
+aside#pi_simpletwittertweets-2.widget.PI_SimpleTwitterTweets {
+    width: 35%;
     display: flex;
-    justify-content: flex-end;
     flex-flow: row wrap;
+    margin-left: 80px;
+}
+
+section.widget.widget_social h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #a6a6a6;
+}
+
+.widget.PI_SimpleTwitterTweets h3.widget-title {
+    padding-bottom: 15px;
+}
+
+.widget.PI_SimpleTwitterTweets ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
-i._mi._before.dashicons {
-    height: 23px;
-    width: 23px;
-    border-radius: 50%;
-    background-color: #3B3B3B;
-    color: #FFFFFF;
-    line-height: 1.5em;
+a.widget.follow_link {
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 700;
+    color: #45ac9d;
+    margin-top: 15px;
 }
 
-li.menu-item {
-    padding-right: 5px;
-    padding-top: 15px;
+span.stt-em a {
+    display: none;
 }
 
-li.menu-item span {
-    clip: rect(1px, 1px, 1px, 1px);
-    overflow: hidden;
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
+/* Newsletter subscibe bar */
+
+aside.widget.widget_newsletter {
+    border-bottom: 0.5px solid #d3d3d3;
 }
 
-/* Contact form */
-
-.contact div.main-content {
-    max-width: 680px;
-    margin: auto;
+.newsletter-form-container {
+    padding-bottom: 15px;
 }
 
-.contact div.main-content h2 {
+div.newsletter-text p {
+    font-size: 0.875em;
+    margin-top: 0;   
+}
+
+.newsletter-form-container label input[type="email"] {
+    width: 88%;
     margin-bottom: 0;
 }
 
-div.nf-form-content {
-    padding-top: 20px;
+.newsletter-form-container input[type="submit"] {
+    background: #45ac9d;
+    width: 30px;
+    padding: 8px 80px 8px 20px;
+    margin-top: 0;
+    margin-left: 0;
 }
 
-div#nf-field-5-container.nf-field-container.textbox-container.label-above ,
-div#nf-field-2-container.nf-field-container.email-container.label-above  {
-    width: 320px;
-    display: inline-block;
+/* Search results page */
+.search.search-results #sidebar,
+.search.search-no-results #sidebar {
+    display: none;
 }
 
-div#nf-field-5-container.nf-field-container.textbox-container.label-above {
-    margin-right: 20px;
+.search-heading {
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 0.5px solid #d3d3d3;
 }
 
-div.nf-field-label label {
-    font-size: 14px;
-}
-
-.nf-form-content div.nf-field input[type="button"] {
-    background-color: #45ac9d;
-    border: 0;
-    color: #f7f7f7;
-    transition: all .5s;
-    float: right;
-}
-
-.nf-form-content div.nf-field-element input.ninja-forms-field {
-    height: 45px;
-}
-
-.field-wrap div.nf-field-element input[type="button"] {
-    width: 160px;
-}
-
-.nf-form-content .nf-field-element textarea,
-.nf-form-content .nf-field-element input.ninja-forms-field { 
-    background-color: #FFFFFF;
-    resize: none;
+.search-heading input#searchsubmit[type="submit"],
+.search.search-no-results input#searchsubmit[type="submit"] {
+    width: 5%;
+    background: url('img/white-arrow-right.png') no-repeat center #45ac9d;
+    color: #ffffff;
+    margin-left: -5px;
+    padding: 0;
+    vertical-align: middle;
 }
 
 /* About page */
-
 header.about-page {
     background: url("img/hero-image.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
     height: auto;
@@ -301,6 +312,89 @@ div.work-with-us .button {
 }
 
 
+/* Contact form */
+
+.contact div.main-content {
+    max-width: 680px;
+    margin: auto;
+}
+
+.contact div.main-content h2 {
+    margin-bottom: 0;
+}
+
+div.nf-form-content {
+    padding-top: 20px;
+}
+
+div#nf-field-5-container.nf-field-container.textbox-container.label-above ,
+div#nf-field-2-container.nf-field-container.email-container.label-above  {
+    width: 320px;
+    display: inline-block;
+}
+
+div#nf-field-5-container.nf-field-container.textbox-container.label-above {
+    margin-right: 20px;
+}
+
+div.nf-field-label label {
+    font-size: 14px;
+}
+
+.nf-form-content div.nf-field input[type="button"] {
+    background-color: #45ac9d;
+    border: 0;
+    color: #f7f7f7;
+    transition: all .5s;
+    float: right;
+}
+
+.nf-form-content div.nf-field-element input.ninja-forms-field {
+    height: 45px;
+}
+
+.field-wrap div.nf-field-element input[type="button"] {
+    width: 160px;
+}
+
+.nf-form-content .nf-field-element textarea,
+.nf-form-content .nf-field-element input.ninja-forms-field { 
+    background-color: #FFFFFF;
+    resize: none;
+}
+
+/* Footer Social Links */
+ul#menu-social-media-nav.social-media-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 30px;
+}
+
+i._mi._before.dashicons {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    line-height: 1.5em;
+}
+
+li.menu-item {
+    padding-right: 5px;
+    padding-top: 15px;
+}
+
+li.menu-item span {
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
+
 /* 404 page */
 
 .error404 .site-content .main-content {
@@ -339,166 +433,34 @@ div.work-with-us .button {
 }
 
 
-
-/* Twitter feed */
-
-aside#pi_simpletwittertweets-2.widget.PI_SimpleTwitterTweets {
-    width: 35%;
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 80px;
-}
-
-section.widget.widget_social h4 {
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #a6a6a6;
-}
-
-.widget.PI_SimpleTwitterTweets h3.widget-title {
-    padding-bottom: 15px;
-}
-
-.widget.PI_SimpleTwitterTweets ul {
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 15px;
-}
-
-a.widget.follow_link {
-    text-transform: uppercase;
-    font-size: 0.875em;
-    font-weight: 700;
-    color: #45ac9d;
-    margin-top: 15px;
-}
-
-span.stt-em a {
-    display: none;
-}
-
-/* Newsletter subscibe bar */
-
-aside.widget.widget_newsletter {
-    border-bottom: 0.5px solid #d3d3d3;
-}
-
-.newsletter-form-container {
-    padding-bottom: 15px;
-}
-
-div.newsletter-text p {
-    font-size: 0.875em;
-    margin-top: 0;   
-}
-
-.newsletter-form-container label input[type="email"] {
-    width: 88%;
-    margin-bottom: 0;
-}
-
-.newsletter-form-container input[type="submit"] {
-    background: #45ac9d;
-    width: 30px;
-    padding: 8px 80px 8px 20px;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
 /* Media queries */
-
-@media screen and ( max-width: 768px ) {
-    
-    .hero-content h1 {
-        font-size: 2em;
-        line-height: 1.5em;
-    }
-    .hero-content h3 {
-        font-size: 1.4em;
-        padding: 10px 0;
-    }
-
-
-    li.individual-featured-work figure,
-    li.individual-featured-work img,
-    li.individual-featured-work h3 {
-        width: 100%;
-    }
+@media screen and (max-width: 1024px) {
     
     li.individual-featured-work {
-        padding-right: 20px;
-        width: 230px;
+        width: 300px;
+        padding-bottom: 40px;
+        padding-right: 10px;
     }
 
-    /* Archive page */
-    article.case-study {
-        display: flex;
-
-    }
-
-    .case-study-images {
-        width: 55%;
-        padding: 40px 0 30px;
-    }
-    
-    aside.case-study-sidebar {
-        margin-bottom: 0;
-        margin-right: 20px;
-    }
-
-    .case-study h2 {
-        padding-bottom: 0;
-    }
-
-    /* About page*/
     header.about-page p {
-        font-size: 1.4em;
-        width: 75%;
+        width: 60%;
     }
-
-    .center-text p {
-        font-size: 0.9em;
-    }
-
-    /* 404 page */
-
-    .error404 .site-content .main-content {
-        background: url("img/bethany-legg-unsplash.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
-    }    
-
-    .error404 .site-content .main-content h2,
-    .error404 .site-content .main-content p {
-        margin: 0 70px;
-    }
-
-    .error404 .site-content .main-content p {
-        width: 52%;
-        padding-top: 8px;
-    }
-
-    .error404 .site-content .main-content h2 {
-        line-height: 1.2em;
-    }
-
 }
 
-
-
-@media screen and ( max-width: 580px ) {
-
-    /* Navigation */
+@media screen and (max-width: 800px) {
+    
     #masthead {
         padding: 0;
     }
 
     .page-header .top-logo {
-        display: inline-block;
         float: left;
-        padding: 20px 0 0;
+        padding: 20px 0 15px;
         margin-bottom: 0;
     }
 
+    /* Navigation */
+    
     .toggle-nav {
         display: inline-block !important;
         float: right;
@@ -506,6 +468,25 @@ div.newsletter-text p {
         font-size: 1.5em;
         transition: color linear 0.15s;
     }
+
+    .menu-top-nav-container li #searchform {
+        display: block !important;
+        padding: 30px 0 0;
+    }
+    .menu-top-nav-container li #searchform input#s[type="text"] {
+        width: 35%;
+        height: 2em;
+    }
+    .menu-top-nav-container li #searchform input#searchsubmit[type="submit"] {
+        width: 10%;
+        height: 2em;
+        background: url('img/white-arrow-right.png') no-repeat center #45ac9d;
+        color: #ffffff;
+        margin-left: -5px;
+        padding: 0;
+        vertical-align: middle;
+    }    
+
     
     a.toggle-nav:link, 
     a.toggle-nav:visited,
@@ -540,7 +521,7 @@ div.newsletter-text p {
         position: relative;
         top: 0px;
         right: 0px;
-        min-width: 180px;
+        min-width: 340px;
         background: #fff;
         text-align: right;
     }
@@ -558,6 +539,108 @@ div.newsletter-text p {
 
 
     /* Front page */
+    .hero-content h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .hero-content h3 {
+        font-size: 1.4em;
+        padding: 10px 0;
+    }
+
+    .featured-work h4 {
+        text-align: center;
+        font-size: 1.5em;
+        padding-bottom: 40px;
+    }
+    li.individual-featured-work {
+        width: 680px;
+        padding-bottom: 40px;
+        padding-right: 0;
+    }
+    li.individual-featured-work figure,
+    li.individual-featured-work img,
+    li.individual-featured-work h3 {
+        width: 100%;
+    }
+
+    
+    /* Archive page */
+    article.case-study {
+        display: flex;
+    }
+
+    .case-study-images {
+        width: 55%;
+        padding: 40px 0 30px;
+    }
+    
+    aside.case-study-sidebar {
+        margin-bottom: 0;
+        margin-right: 20px;
+        padding-bottom: 0;
+    }
+
+    .case-study h2 {
+        padding-bottom: 0;
+    }
+
+    /* About page*/
+    header.about-page p {
+        font-size: 1.4em;
+        width: 75%;
+    }
+
+    .center-text p {
+        font-size: 0.9em;
+    }
+
+    /* 404 page */
+    .error404 .site-content .main-content {
+        background: url("img/bethany-legg-unsplash.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
+    }    
+
+    .error404 .site-content .main-content h2,
+    .error404 .site-content .main-content p {
+        margin: 0 70px;
+    }
+
+    .error404 .site-content .main-content p {
+        width: 52%;
+        padding-top: 8px;
+    }
+
+    .error404 .site-content .main-content h2 {
+        line-height: 1.2em;
+    }
+
+    /* Search results page */
+    .search-heading input#searchsubmit[type="submit"] {
+        width: 7%;
+    }
+
+}
+
+
+@media screen and (max-width: 580px) {
+    .site-content {
+        max-width: 580px;
+    }
+    
+    #sidebar {
+        display: none;
+    }
+
+    #navigation .pagination {
+        display: block;
+    }
+
+    /* Front page */
+
+    .page-header .top-logo {
+        float: left;
+        padding: 20px 0 0;
+    }
 
     .hero-content h1 {
         font-size: 1.8em;
@@ -569,38 +652,59 @@ div.newsletter-text p {
 
     .blog-post {
         display: block;
-        width: 100%;
-        margin-bottom: 50px;
-        margin-right: 60px;
+        width: 85%;
+        margin: 0 20px 50px;
     }    
     .blog-post h3 {
         font-size: 1.3em;
         margin: 15px 0 10px;
     }
 
-
+    section.widget.widget_social {
+        margin-bottom: 30px;
+    }
+    section.widget.widget_social h4, 
+    a.widget.follow_link {
+        margin: 15px 20px 0;
+    }
     aside#pi_simpletwittertweets-2.widget.PI_SimpleTwitterTweets {
         display: block;
-        width: 100%;
-        margin-left: 0;
+        width: 85%;
+        margin: 0 20px;
     }
     .widget.PI_SimpleTwitterTweets h3.widget-title {
         margin: 15px 0 10px;
     }
 
+    /* Featured work */
+ 
+    ul.homepage-featured-posts {
+        justify-content: center;
+    }
+    li.individual-featured-work {
+        width: 300px;
+        padding-bottom: 30px;
+        padding-right: 0;
+    }
+    li.individual-featured-work figure,
+    li.individual-featured-work img,
+    li.individual-featured-work h3 {
+        width: 100%;
+    }
+    
     /* Case Studies Archive */
     aside.case-study-sidebar {
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        padding-left: 10px;
     }
-    
     article.case-study {
         display: flex;
         flex-flow: row wrap;
     }
-    
-    .case-study-images img {
-        width: 85%;
+    .case-study-images {
+        width: 90%;
+        padding: 0 10px;
     }
 
     /* About page */
@@ -633,19 +737,15 @@ div.newsletter-text p {
         text-align: center;
     }
     
-    div.work-with-us {
+    .work-with-us {
         padding: 10px 0 20px;
         text-align: center;
     }
-    
-    div.work-with-us .button {
-        margin: 30px 0 0 30px;
+    .work-with-us h2 {
+        font-size: 1.2em;
     }
-
-    /* Featured work */
-        
-    ul.homepage-featured-posts {
-        justify-content: flex-start;
+    .work-with-us .button {
+        margin: 30px 0;
     }
 
 
@@ -693,13 +793,19 @@ div.newsletter-text p {
     .error404 .site-content .main-content p {
         font-size: 0.8em;
         width: 90%;
-        margin: 0 20px 0;
+        margin: 0 10px;
     }
 
     .error404 .site-content .main-content h2 {
         font-size: 2em;
         line-height: 1.2em;
         margin-bottom: 170px;
+    }
+
+    /* Search results page */
+    .search-heading input#searchsubmit[type="submit"],
+    .search.search-no-results input#searchsubmit[type="submit"] {    
+        width: 10%;
     }
 
 }

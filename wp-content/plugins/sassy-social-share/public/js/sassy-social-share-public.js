@@ -149,6 +149,7 @@ function heateorSssMoreSharingPopup(elem, postUrl, postTitle, twitterTitle){
 		title: "Print",
 		locale: "en-US",
 		redirect_url: "http://www.printfriendly.com/print?url=" + postUrl,
+		bookmarklet_url: "javascript:window.print()"
 	  },
 	  tumblr: {
 		title: "Tumblr",

@@ -2152,7 +2152,7 @@ defined( 'ABSPATH' ) or die( "Cheating........Uh!!" );
 						<tr>
 							<td>
 							<?php _e( 'If Facebook sharing is not working fine, click at the following link and enter the problematic url (where Facebook sharing is not working properly) of your website in the text field. Click "Fetch New Scrape Information" button.', 'sassy-social-share' ) ?><br/>
-							<a style="text-decoration: none" target="_blank" href="https://developers.facebook.com/tools/debug/og/object/">https://developers.facebook.com/tools/debug/og/object</a>
+							<a style="text-decoration: none" target="_blank" href="https://developers.facebook.com/tools/debug/">https://developers.facebook.com/tools/debug/</a>
 							</td>
 						</tr>
 					</table>

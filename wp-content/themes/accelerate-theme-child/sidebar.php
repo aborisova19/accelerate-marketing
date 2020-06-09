@@ -50,14 +50,20 @@
 			<aside class="widget widget_categories">
 				<h2 class="widget-title">Categories</h2>
 				<ul>
-					<li><a href="">Books </a></li>
-					<li><a href="">My Notes</a></li>
-					<li><a href="">Photos</a></li>
-					<li><a href="">Videos</a></li>
-					<li><a href="">Quotes</a></li>
+					<li><a href="/accelerate/category/advice/">Advice</a></li>
+					<li><a href="/accelerate/category/apps/">Apps</a></li>
+					<li><a href="/accelerate/category/career/">Career</a></li>
+					<li><a href="/accelerate/category/career-success/">Career Succes</a></li>
+					<li><a href="/accelerate/category/freelancing/">Freelancing</a></li>
+					<li><a href="/accelerate/category/listicles/">Listicles</a></li>
+					<li><a href="/accelerate/category/wordpress/">Wordpress</a></li>
+					<li><a href="/accelerate/category/technology/">Technology</a></li>
+					
+					
 				</ul>
 			</aside>
-
+		
+			<!--
 			<aside class="widget widget_archive">
 				<h2 class="widget-title">Archives</h2>
 				<ul>
@@ -67,8 +73,8 @@
 					<li><a href="">June 2014</a></li>
 					<li><a href="">May 2014</a></li>
 				</ul>
-			</aside>
-
+			</aside> -->
+					
 			<aside class="widget widget_events">
 				<h2 class="widget-title">Events</h3>
 				<ul>
